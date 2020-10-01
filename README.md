@@ -37,13 +37,13 @@ A dot means 0, an alphabetical character A through Y means 1 through 25 (A=1, B=
 
 To achieve this, a History class was defined with the following public interface:
 ```
-class History
-	{
+class History 
+{
 	  public:
 	    History(int nRows, int nCols);
 	    bool record(int r, int c);
 	    void display() const;
-	};
+};
 ```
 The constructor for this class initialises a History object that corresponds to an Arena with nRows and nCols columns. You may assume (i.e. no need to check) that these arguments will not exceed MAXROWS and MAXCOLS, respectively, and that neither will be less than 1.
 
